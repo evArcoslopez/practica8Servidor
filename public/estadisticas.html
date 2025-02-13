@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estadísticas de Aprobados</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">🏠 Inicio</a></li>
+            <li><a href="centros.html">🏫 Centros</a></li>
+            <li><a href="alumnos.html">👨‍🎓 Alumnos</a></li>
+            <li><a href="estadisticas.html">📊 Estadísticas</a></li>
+            <li><a href="editar_curso.html?id=1">✏ Editar Curso</a></li>
+        </ul>
+    </nav>
+    <h1>Estadísticas de Aprobados</h1>
+
+    <!-- Ahora el gráfico es más grande -->
+    <div style="width: 1000px; height: 600px; margin: auto;">
+        <canvas id="graficoAprobados"></canvas>
+    </div>
+
+    <script src="script-estadisticas.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+/* Estilo general con accesibilidad mejorada */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F0F8FF;
+    color: #212529;
+}
+
+/* Barra de navegación */
+nav {
+    background-color: #0077B6;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #f8f9fa;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background 0.3s, color 0.3s;
+    display: inline-block;
+    font-weight: 600;
+}
+
+nav a:hover {
+    background: #023E8A;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+/* Contenedor principal */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Tablas con mejor contraste */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+    border: 1px solid #444;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    color: #212529;
+    font-weight: 400;
+}
+
+th {
+    background-color: #0077B6;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+td {
+    background-color: #e9ecef;
+}
+
+tr:hover td {
+    background-color: #d6d8db;
+    transition: background 0.3s;
+}
+
+/* Botones con mejor visibilidad */
+button {
+    background-color: #0077B6;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #023E8A;
+    transform: scale(1.05);
+}
+
+/* Formulario con mejor contraste */
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #666;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #212529;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #0077B6;
+    box-shadow: 0px 0px 5px rgba(0, 119, 182, 0.5);
+}
+
+/* Tarjetas */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #0077B6;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    font-weight: 600;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Curso</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">🏠 Inicio</a></li>
+            <li><a href="centros.html">🏫 Centros</a></li>
+            <li><a href="alumnos.html">👨‍🎓 Alumnos</a></li>
+            <li><a href="estadisticas.html">📊 Estadísticas</a></li>
+            <li><a href="editar_curso.html?id=1">✏ Editar Curso</a></li>
+        </ul>
+    </nav>
+    <h1>Editar Curso</h1>
+    <label for="curso">Selecciona un curso:</label>
+    <select id="curso"></select>
+
+    <form id="formulario-curso">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required>
+
+        <label for="fechaImportacion">Fecha de Importación:</label>
+        <input type="date" id="fechaImportacion" required>
+
+        <label for="nivel">Nivel:</label>
+        <input type="text" id="nivel" required>
+
+        <label for="descripcion">Descripción:</label>
+        <textarea id="descripcion" required></textarea>
+
+        <label for="lugar">Lugar:</label>
+        <input type="text" id="lugar" required>
+
+        <button type="submit">Actualizar Curso</button>
+    </form>
+    <script src="script-editar-curso.js"></script>
+</body>
+</html>
